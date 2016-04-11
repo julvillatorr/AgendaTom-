@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/nombreMarcador"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="#4fbecf"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-60dp"
+        android:layout_gravity="center_vertical"
+        android:background="#FFFFFF" >
+        
+        <TextView android:id="@+id/distanciaMarcador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+            android:textColor="#4fbecf"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        
+        <TextView android:id="@+id/tiempoMarcador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

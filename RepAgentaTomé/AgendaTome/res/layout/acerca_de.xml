@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AGENDA TOMÉ"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:paddingBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/acercade"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agenda Tomé es la primera versión de una aplicación dirigida a la comuna de Tomé que busca informar, incentivar y aportar al desarrollo turístico de la zona.\n\nAgenda Tomé es el resultado de un proyecto denominado  “Sistema de difusión de eventos y geolocalización de lugares de interés de Tomé mediante aplicación Android” perteneciente a la Facultad de Ciencias Empresariales de la Universidad del Bío Bío, a la cual pertenecen los desarrolladores de ésta."
+        android:textColor="#424242"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:paddingBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/desarrolladores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desarrollador por:\n\nAníbal Briceño Villarroel.\nJulio Villarroel Torres."
+        android:textColor="#424242"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

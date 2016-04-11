@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+	
+    <ImageView
+        android:id="@+id/iconoEvento"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16dp"
+    	android:paddingTop="8dp"
+		android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:src="@drawable/ico_calendar"/>
+	
+    <LinearLayout
+        android:id="@+id/linearInfo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iconoEvento"
+	    android:paddingRight="16dp"
+	    android:paddingLeft="16dp">
+        
+	    <TextView
+	        android:id="@+id/nombreEvento"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="3dp"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:text="Hola ke aze"/>
+	
+	    <TextView
+	        android:id="@+id/fechaEvento"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nombreEvento"
+	        android:layout_toRightOf="@+id/iconoEvento"
+	        android:textSize="14sp"
+	        android:text="agostso 2134 sedf4 34"/>
+	    <TextView
+	        android:id="@+id/direccionEvento"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/fechaEvento"
+	        android:layout_toRightOf="@+id/iconoEvento"
+	        android:textSize="14sp"
+	        android:text="mariano egaña 123, tomé"/>
+	    
+	</LinearLayout>
+</RelativeLayout>

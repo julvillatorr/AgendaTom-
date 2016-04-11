@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#E6E6E6"
+	android:id="@+id/refresh">
+    
+	<ListView
+        android:id="@+id/listaEvento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:divider="@null"/>
+</android.support.v4.widget.SwipeRefreshLayout>

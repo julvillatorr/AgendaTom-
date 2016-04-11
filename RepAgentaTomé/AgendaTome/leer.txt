@@ -1,0 +1,15 @@
+Nueva: 02:83:CB:56:48:78:C6:04:BD:C6:5B:AF:B2:3A:4C:DA:8E:0E:CF:CD
+AIzaSyD7XQtj4C-HenBNLCGrN9vtxYfLDUiB-1Q
+alias: llave
+pass: tesis2015
+
+
+hoy
+E9:49:FB:37:A4:28:46:C6:9A:96:C5:2A:B7:19:70:B5:2E:7B:DD:B6
+
+
+antigua: 91:0F:36:F0:59:30:69:18:2E:07:69:F3:44:A8:E2:70:7A:24:49:04
+
+
+
+keytool.exe -list -v -alias llave -keystore "C:\Users\Julio\workspace\AgendaTome\llave.keystore" -storepass tesis2015 -keypass tesis2015

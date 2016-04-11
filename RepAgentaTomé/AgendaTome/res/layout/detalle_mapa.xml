@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    
+    <TextView
+	        android:id="@+id/nombre"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+        	android:layout_below="@+id/map"
+	        android:textSize="24sp"
+	        android:textStyle="bold"
+	        android:textColor="#FFFFFF"
+	        android:padding="16dp"
+        	android:background="#4fbecf"/>
+    
+	<ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombre"
+        android:fillViewport="false"
+        android:orientation="vertical">
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	        <TextView
+			    android:id="@+id/infoMarcador"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="8dp"
+			    android:layout_marginBottom="4dp"
+			    android:textSize="16sp"
+			    android:textColor="#4fbecf"
+			    android:textStyle="bold"
+		        android:paddingLeft="16dp"
+		        android:paddingRight="16dp"
+		        android:text="Información:"/>
+		        
+		    <TextView
+		        android:id="@+id/direccion"
+		        android:layout_below="@+id/infoMarcador"
+		        android:layout_width="match_parent"
+			    android:layout_height="50dp"
+			    android:gravity="center_vertical"
+		        android:paddingLeft="16dp"
+		        android:paddingRight="16dp"
+			    android:textSize="18sp"
+			    android:drawableLeft="@drawable/ic_place_black_24dp"
+			    android:drawablePadding="16dp"/>
+		    
+		    <Button
+		        android:id="@+id/botonCall"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/direccion"
+			    android:gravity="center_vertical"
+		        android:paddingLeft="16dp"
+		        android:paddingRight="16dp"
+			    android:textSize="18sp"
+			    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+			    android:drawablePadding="16dp"
+			    android:background="#FFFFFF"/>
+		        
+		    <Button
+		        android:id="@+id/sitioWeb"
+		        android:layout_below="@+id/telefono"
+		        android:layout_width="match_parent"
+			    android:layout_height="50dp"
+			    android:gravity="center_vertical"
+		        android:paddingLeft="16dp"
+		        android:paddingRight="16dp"
+			    android:textSize="18sp"
+			    android:drawableLeft="@drawable/ic_web_black_24dp"
+			    android:drawablePadding="16dp"
+			    android:background="#FFFFFF"/>
+		        
+		    <Button
+		        android:id="@+id/email"
+		        android:layout_below="@+id/sitioWeb"
+		        android:layout_width="match_parent"
+			    android:layout_height="50dp"
+			    android:gravity="center_vertical"
+		        android:paddingLeft="16dp"
+		        android:paddingRight="16dp"
+			    android:textSize="18sp"
+			    android:drawableLeft="@drawable/ic_email_black_24dp"
+			    android:drawablePadding="16dp"
+			    android:background="#FFFFFF"/>
+			    
+			<TextView
+				    android:id="@+id/tituloSeccion"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="8dp"
+				    android:layout_marginBottom="8dp"
+				    android:textSize="16sp"
+				    android:textColor="#4fbecf"
+				    android:textStyle="bold"
+			        android:paddingLeft="16dp"
+			        android:paddingRight="16dp"
+			        android:text="Descripción:"/>        
+		   	<TextView
+			     android:id="@+id/descripcion"
+			     android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+		     	 android:textSize="18sp"
+		         android:paddingLeft="16dp"
+		         android:paddingRight="16dp"
+		    	 android:layout_marginBottom="10dp"/>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
